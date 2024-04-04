@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <h6 data-bs-toggle="tooltip" data-bs-html="true" title='Click me!'>
+        Modal Window
+    </h6>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+<div class="alert alert-success" role="alert">
+    Well done my friend!
+</div>
+<button type="button" class="btn btn-success">Success</button>
+</p>
+<div>
+    <div class="alert alert-info hidden" id="myDate" role="alert"></div>
+    <button type="button" id="showMyDate" class="btn btn-info">Show my Date of Birth</button>
+</div>
+
+<div class="input-group dob">
+    <span class="input-group-text">Date of birth:</span>
+    <input type="text" aria-label="month" id="month" class="form-control" placeholder="Month, egc. 01-12">
+    <input type="text" aria-label="day" id="day" class="form-control"  placeholder="Day, egc. 01-31">
+    <input type="text" aria-label="year" id="year" class="form-control" placeholder="Year, egc. 2024">
+    <button type="button" id="dateFormatBtn" class="btn btn-warning">Change Date Format</button>
+    <button type="button" id="reset" class="btn btn-secondary">Reset</button>
+
+</div>
+<div class="alert alert-primary hidden" id="newFormat" role="alert"></div>
+<div class="alert alert-danger hidden" id="alert" role="alert"></div>
+<script src="node_modules/moment/min/moment.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="js/data.js"></script>
+<script src="js/function.js"></script>
+</body>
+</html>
+

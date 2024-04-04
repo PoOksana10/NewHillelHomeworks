@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+}
+
+.dob {
+    max-width: 47%;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
